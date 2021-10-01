@@ -74,7 +74,7 @@ function Modal({ modalChange, setModalChange, movies, title }) {
             <div className="modalImage"><img alt={movieObject.title} src={`https://image.tmdb.org/t/p/w500${movieObject.poster_path}`}></img></div>
             <div className="modalTitle">{movieObject.title}</div>
             <div className="modalInput">Edit:<input onChange={editPoint} type="number" value={movieObject.vote_average}></input></div>
-            <div className="modalOverview">{movieObject.overview.includes("Barbie")?movieObject.overview.substring(0,220)+"...":movieObject.overview}</div>
+            <div className="modalOverview">{movieObject.overview}</div>
           </div>
 
         </div>
