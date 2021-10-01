@@ -127,13 +127,18 @@ $shadow-color: rgba(0, 0, 0, 0.9);
   @include flex-center;
 }
 //Movie modal
+.modalDiv{
+  display: flex;
+  flex-direction: column;
+}
+
 .modal {
   margin: 40px auto;
   padding: 30px;
   background-color: rgba(182, 182, 179, 0.9);
   border: 2px solid black;
   box-shadow: 15px 10px 5px rgba(0, 0, 0, 0.9);
-  max-width: 25%;
+  max-width: 35%;
   height:auto;
   border-radius: 10px;
 }
@@ -179,11 +184,13 @@ $shadow-color: rgba(0, 0, 0, 0.9);
 }
 .modalOverview {
   border: 1px solid black;
-  width: 300px;
+  width: 100%;
   padding: 5px;
   border-radius: 2px;
   text-align: center;
   font-size: 15px;
+  max-height: 100px;
+    overflow: auto;
 }
 //modal ends
 //media queries
@@ -192,11 +199,17 @@ $shadow-color: rgba(0, 0, 0, 0.9);
     grid-template-columns: 1fr 1fr 1fr;
     margin: 30px 100px;
   }
+  
 }
 
 @media screen and (max-width:768px){
   .main-container{
     grid-template-columns: 1fr 1fr;
+  }
+  .modalImage{
+    img{
+      width: 100%;
+    }
   }
 }
 @media screen and (max-width:480px){
