@@ -80,6 +80,9 @@ $shadow-color: rgba(0, 0, 0, 0.9);
   margin-top: auto;
   padding: 0 5px;
 }
+.stars{
+  z-index: 0;
+}
 .point {
   @include flex-center;
 }
@@ -130,8 +133,8 @@ $shadow-color: rgba(0, 0, 0, 0.9);
   background-color: rgba(182, 182, 179, 0.9);
   border: 2px solid black;
   box-shadow: 15px 10px 5px rgba(0, 0, 0, 0.9);
-  width: 500px;
-  height: 860px;
+  max-width: 25%;
+  height:auto;
   border-radius: 10px;
 }
 .closeModalButton {
@@ -148,7 +151,7 @@ $shadow-color: rgba(0, 0, 0, 0.9);
 .modalImage {
   margin-top: 5px;
   img {
-    width: 300px;
+    width: 200px;
     text-align: center;
   }
 }
@@ -202,4 +205,7 @@ $shadow-color: rgba(0, 0, 0, 0.9);
     
   }
 }
+
+
+
 
